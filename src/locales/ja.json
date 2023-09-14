@@ -1,4 +1,5 @@
 {
   "hello": "こんにちは、Vue I18n",
-  "language": "言語"
+  "language": "言語",
+  "tooltipText": "tooltip text"
 }

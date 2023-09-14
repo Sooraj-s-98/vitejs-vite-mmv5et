@@ -1,4 +1,5 @@
 {
   "hello": "Hello, Vue I18n",
-  "language": "Languages"
+  "language": "Languages",
+   "tooltipText": "tooltip text" 
 }

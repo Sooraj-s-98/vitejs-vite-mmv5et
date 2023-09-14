@@ -7,7 +7,15 @@ import vueI18n from '@intlify/unplugin-vue-i18n/vite';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          compatConfig: {
+            MODE: 2,
+          },
+        },
+      },
+    }),
     vueI18n({
       include: resolve(
         dirname(fileURLToPath(import.meta.url)),
@@ -15,4 +23,9 @@ export default defineConfig({
       ),
     }),
   ],
+  resolve: {
+    alias: {
+      vue: '@vue/compat',
+    },
+  },
 });
