@@ -14,7 +14,7 @@ const { t, locale } = useI18n();
     boundary="window"
     placement="right"
   >
-    {{ $t("tooltipText") }}
+    {{ $t('tooltipText') }}
   </b-tooltip>
 
   <p id="tooltip-i18n-t">i18n-t tag</p>
